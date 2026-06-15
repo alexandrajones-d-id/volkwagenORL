@@ -37,32 +37,11 @@
     .logo-area { display: flex; align-items: center; gap: 14px; }
     .vw-logo { width: 48px; height: 48px; }
 
-    .dealer-name h1 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      line-height: 1.1;
-    }
-    .dealer-name span {
-      font-size: 0.7rem;
-      color: var(--vw-light-blue);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
+    .dealer-name h1 { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.03em; line-height: 1.1; }
+    .dealer-name span { font-size: 0.7rem; color: var(--vw-light-blue); letter-spacing: 0.12em; text-transform: uppercase; }
 
-    .header-nav {
-      display: flex;
-      gap: 28px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .header-nav a {
-      color: var(--vw-silver);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .header-nav { display: flex; gap: 28px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    .header-nav a { color: var(--vw-silver); text-decoration: none; transition: color 0.2s; }
     .header-nav a:hover { color: var(--vw-light-blue); }
 
     .hero {
@@ -110,292 +89,72 @@
       width: fit-content;
     }
 
-    .online-dot {
-      width: 8px; height: 8px;
-      background: #22c55e;
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
+    .online-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; animation: pulse 2s infinite; }
 
     @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.5; transform: scale(0.8); }
     }
 
-    .hero-text h2 {
-      font-size: clamp(1.8rem, 3vw, 2.8rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 16px;
-    }
+    .hero-text h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
     .hero-text h2 em { font-style: normal; color: var(--vw-light-blue); }
+    .hero-text p { font-size: 1rem; color: var(--vw-silver); line-height: 1.7; margin-bottom: 28px; max-width: 380px; }
 
-    .hero-text p {
-      font-size: 1rem;
-      color: var(--vw-silver);
-      line-height: 1.7;
-      margin-bottom: 28px;
-      max-width: 380px;
-    }
-
-    .service-pills {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 32px;
-    }
-
-    .pill {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(0,176,240,0.3);
-      border-radius: 30px;
-      padding: 7px 16px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: var(--vw-silver);
-    }
+    .service-pills { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+    .pill { display: flex; align-items: center; gap: 7px; background: rgba(255,255,255,0.07); border: 1px solid rgba(0,176,240,0.3); border-radius: 30px; padding: 7px 16px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--vw-silver); }
     .pill svg { width: 14px; height: 14px; color: var(--vw-light-blue); }
 
-    .start-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--vw-light-blue);
-      color: var(--vw-blue);
-      font-weight: 800;
-      font-size: 1rem;
-      padding: 16px 36px;
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 4px 24px rgba(0,176,240,0.4);
-      width: fit-content;
-    }
-    .start-btn:hover {
-      background: #33C3FF;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(0,176,240,0.55);
-    }
-    .start-btn svg { width: 20px; height: 20px; }
+    .cap-list { display: flex; flex-direction: column; gap: 13px; }
+    .cap-item { display: flex; align-items: center; gap: 13px; font-size: 0.88rem; color: var(--vw-silver); line-height: 1.4; }
+    .cap-icon { flex-shrink: 0; width: 34px; height: 34px; background: rgba(0,176,240,0.12); border: 1px solid rgba(0,176,240,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .cap-icon svg { width: 15px; height: 15px; color: var(--vw-light-blue); }
 
-    .hero-avatar {
-      flex: 1;
-      position: relative;
-      display: flex;
-      align-items: stretch;
-      min-height: 600px;
-    }
+    .hero-avatar { flex: 1; position: relative; display: flex; align-items: stretch; min-height: 600px; }
+    .hero-avatar::before { content: ''; position: absolute; left: 0; top: 10%; bottom: 10%; width: 1px; background: linear-gradient(to bottom, transparent, rgba(0,176,240,0.4), transparent); z-index: 1; }
 
-    .hero-avatar::before {
-      content: '';
-      position: absolute;
-      left: 0; top: 10%; bottom: 10%;
-      width: 1px;
-      background: linear-gradient(to bottom, transparent, rgba(0,176,240,0.4), transparent);
-      z-index: 1;
-    }
+    #did-agent-container { flex: 1; width: 100%; position: relative; min-height: 600px; }
+    did-agent { display: block !important; width: 100% !important; height: 600px !important; min-height: 600px !important; }
 
-    #did-agent-container {
-      flex: 1;
-      width: 100%;
-      position: relative;
-      min-height: 600px;
-    }
-
-    did-agent {
-      display: block !important;
-      width: 100% !important;
-      height: 600px !important;
-      min-height: 600px !important;
-    }
-
-    .departments {
-      padding: 80px 40px;
-      background: var(--vw-dark);
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 52px;
-    }
-    .section-header h3 {
-      font-size: 1.9rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
+    .departments { padding: 80px 40px; background: var(--vw-dark); }
+    .section-header { text-align: center; margin-bottom: 52px; }
+    .section-header h3 { font-size: 1.9rem; font-weight: 800; margin-bottom: 10px; }
     .section-header h3 em { font-style: normal; color: var(--vw-light-blue); }
     .section-header p { color: var(--vw-silver); font-size: 0.95rem; }
 
-    .dept-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .dept-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 1100px; margin: 0 auto; }
+    .dept-card { background: linear-gradient(160deg, #0e1f3b 0%, #001233 100%); border: 1px solid rgba(0,176,240,0.18); border-radius: 20px; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s; }
+    .dept-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,176,240,0.2); border-color: rgba(0,176,240,0.45); }
 
-    .dept-card {
-      background: linear-gradient(160deg, #0e1f3b 0%, #001233 100%);
-      border: 1px solid rgba(0,176,240,0.18);
-      border-radius: 20px;
-      overflow: hidden;
-      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-    }
-    .dept-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 48px rgba(0,176,240,0.2);
-      border-color: rgba(0,176,240,0.45);
-    }
-
-    .dept-img {
-      width: 100%;
-      height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
+    .dept-img { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
     .dept-img.finance { background: linear-gradient(135deg, #001E50 0%, #003087 100%); }
     .dept-img.sales { background: linear-gradient(135deg, #002a6e 0%, #00437a 100%); }
     .dept-img.service { background: linear-gradient(135deg, #001233 0%, #002a6e 100%); }
-
     .dept-icon { width: 72px; height: 72px; color: var(--vw-light-blue); opacity: 0.9; }
-
-    .dept-tag {
-      position: absolute;
-      top: 14px; left: 14px;
-      background: var(--vw-light-blue);
-      color: var(--vw-blue);
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 20px;
-    }
+    .dept-tag { position: absolute; top: 14px; left: 14px; background: var(--vw-light-blue); color: var(--vw-blue); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; }
 
     .dept-body { padding: 24px 24px 28px; }
     .dept-body h4 { font-size: 1.2rem; font-weight: 800; margin-bottom: 10px; }
-    .dept-body p { font-size: 0.85rem; color: var(--vw-silver); line-height: 1.7; margin-bottom: 20px; }
+    .dept-body p { font-size: 0.85rem; color: var(--vw-silver); line-height: 1.7; }
 
-    .dept-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+    .dept-stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+    .stat { background: rgba(0,176,240,0.1); border: 1px solid rgba(0,176,240,0.25); border-radius: 20px; padding: 4px 12px; font-size: 0.72rem; font-weight: 700; color: var(--vw-light-blue); letter-spacing: 0.04em; }
 
-    .stat {
-      background: rgba(0,176,240,0.1);
-      border: 1px solid rgba(0,176,240,0.25);
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--vw-light-blue);
-      letter-spacing: 0.04em;
-    }
-
-    .dept-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: transparent;
-      border: 1.5px solid var(--vw-light-blue);
-      color: var(--vw-light-blue);
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 9px 18px;
-      border-radius: 30px;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      transition: background 0.2s, color 0.2s;
-    }
-    .dept-btn:hover { background: var(--vw-light-blue); color: var(--vw-blue); }
-
-    .cars-section {
-      padding: 70px 40px;
-      background: linear-gradient(180deg, #0d1f3c 0%, var(--vw-dark) 100%);
-      border-top: 1px solid rgba(0,176,240,0.12);
-    }
-
-    .cars-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 26px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .car-card {
-      background: linear-gradient(160deg, #0e1f3b 0%, #001233 100%);
-      border: 1px solid rgba(0,176,240,0.18);
-      border-radius: 18px;
-      overflow: hidden;
-      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-    }
-    .car-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 48px rgba(0,176,240,0.22);
-      border-color: rgba(0,176,240,0.5);
-    }
-
+    .cars-section { padding: 70px 40px; background: linear-gradient(180deg, #0d1f3c 0%, var(--vw-dark) 100%); border-top: 1px solid rgba(0,176,240,0.12); }
+    .cars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; max-width: 1100px; margin: 0 auto; }
+    .car-card { background: linear-gradient(160deg, #0e1f3b 0%, #001233 100%); border: 1px solid rgba(0,176,240,0.18); border-radius: 18px; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s; }
+    .car-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,176,240,0.22); border-color: rgba(0,176,240,0.5); }
     .car-img-wrap { width: 100%; height: 210px; overflow: hidden; }
     .car-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
     .car-card:hover .car-img-wrap img { transform: scale(1.06); }
-
     .car-info { padding: 20px 22px 24px; }
     .car-year { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--vw-light-blue); margin-bottom: 4px; }
     .car-name { font-size: 1.35rem; font-weight: 800; margin-bottom: 8px; }
-    .car-desc { font-size: 0.83rem; color: var(--vw-silver); line-height: 1.65; margin-bottom: 18px; }
+    .car-desc { font-size: 0.83rem; color: var(--vw-silver); line-height: 1.65; }
 
-    .car-ask-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: transparent;
-      border: 1.5px solid var(--vw-light-blue);
-      color: var(--vw-light-blue);
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 9px 18px;
-      border-radius: 30px;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      transition: background 0.2s, color 0.2s;
-    }
-    .car-ask-btn:hover { background: var(--vw-light-blue); color: var(--vw-blue); }
-
-    footer {
-      background: var(--vw-blue);
-      padding: 28px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-top: 3px solid var(--vw-light-blue);
-      font-size: 0.8rem;
-      color: var(--vw-silver);
-      flex-wrap: wrap;
-      gap: 14px;
-    }
+    footer { background: var(--vw-blue); padding: 28px 40px; display: flex; align-items: center; justify-content: space-between; border-top: 3px solid var(--vw-light-blue); font-size: 0.8rem; color: var(--vw-silver); flex-wrap: wrap; gap: 14px; }
     footer a { color: var(--vw-light-blue); text-decoration: none; }
     .footer-badges { display: flex; gap: 12px; align-items: center; font-size: 0.75rem; }
-    .badge {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 5px 12px;
-      color: var(--vw-silver);
-    }
+    .badge { display: flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border-radius: 20px; padding: 5px 12px; color: var(--vw-silver); }
     .badge svg { width: 13px; height: 13px; color: var(--vw-light-blue); }
 
     @media (max-width: 900px) {
@@ -418,8 +177,7 @@
   <div class="logo-area">
     <svg class="vw-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="50" r="48" fill="#001E50" stroke="#00B0F0" stroke-width="2.5"/>
-      <text x="50" y="68" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900"
-            font-size="44" fill="#FFFFFF" letter-spacing="-2">VW</text>
+      <text x="50" y="68" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="44" fill="#FFFFFF" letter-spacing="-2">VW</text>
     </svg>
     <div class="dealer-name">
       <h1>Volkswagen North Orlando</h1>
@@ -435,10 +193,7 @@
 
 <section class="hero">
   <div class="hero-text">
-    <div class="online-badge">
-      <span class="online-dot"></span>
-      AI Advisor Online
-    </div>
+    <div class="online-badge"><span class="online-dot"></span>AI Advisor Online</div>
     <h2>Your <em>Virtual VW<br>Advisor</em> Is Here</h2>
     <p>Get instant answers about financing, buying a new vehicle, or scheduling service — 24/7, no hold music, no wait.</p>
     <div class="service-pills">
@@ -455,10 +210,24 @@
         Service
       </div>
     </div>
-    <button class="start-btn" id="startBtn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-      Start Conversation
-    </button>
+    <div class="cap-list">
+      <div class="cap-item">
+        <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+        <span>Get financing quotes, lease estimates &amp; pre-qualification info</span>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2z"/><path d="M8 17v2m8-2v2M3 11h18"/></svg></div>
+        <span>Compare models, explore trims &amp; schedule a test drive</span>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2"/></svg></div>
+        <span>Book service appointments, check recalls &amp; get repair estimates</span>
+      </div>
+      <div class="cap-item">
+        <div class="cap-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <span>Available 24/7 — instant answers, no hold music</span>
+      </div>
+    </div>
   </div>
 
   <div class="hero-avatar">
@@ -469,7 +238,7 @@
 <section class="departments" id="departments">
   <div class="section-header">
     <h3>How Can We <em>Help You Today?</em></h3>
-    <p>Our AI advisor is trained across all three departments — click any to start a conversation.</p>
+    <p>Our AI advisor is trained across all three departments — speak with her directly using the advisor on this page.</p>
   </div>
   <div class="dept-grid">
 
@@ -486,10 +255,6 @@
           <span class="stat">Lease vs. Buy</span>
           <span class="stat">Rate Estimates</span>
         </div>
-        <button class="dept-btn" id="financeBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Ask Finance Advisor
-        </button>
       </div>
     </div>
 
@@ -506,10 +271,6 @@
           <span class="stat">Test Drives</span>
           <span class="stat">Inventory</span>
         </div>
-        <button class="dept-btn" id="salesBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Ask Sales Advisor
-        </button>
       </div>
     </div>
 
@@ -526,10 +287,6 @@
           <span class="stat">Maintenance Tips</span>
           <span class="stat">Recall Info</span>
         </div>
-        <button class="dept-btn" id="serviceBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Ask Service Advisor
-        </button>
       </div>
     </div>
 
@@ -544,47 +301,29 @@
   <div class="cars-grid">
 
     <div class="car-card">
-      <div class="car-img-wrap">
-        <img src="jetta.jpg" alt="2026 Volkswagen Jetta" loading="lazy" />
-      </div>
+      <div class="car-img-wrap"><img src="jetta.jpg" alt="2026 Volkswagen Jetta" loading="lazy" /></div>
       <div class="car-info">
         <div class="car-year">2026</div>
         <div class="car-name">Jetta</div>
         <div class="car-desc">Sophisticated style meets spirited performance. Refined ride with premium tech and surprising efficiency.</div>
-        <button class="car-ask-btn" id="jettaBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Ask About Jetta
-        </button>
       </div>
     </div>
 
     <div class="car-card">
-      <div class="car-img-wrap">
-        <img src="tiguan.jpg" alt="2026 Volkswagen Tiguan" loading="lazy" />
-      </div>
+      <div class="car-img-wrap"><img src="tiguan.jpg" alt="2026 Volkswagen Tiguan" loading="lazy" /></div>
       <div class="car-info">
         <div class="car-year">2026</div>
         <div class="car-name">Tiguan</div>
         <div class="car-desc">Versatile, spacious, and packed with driver-assist tech. Built for families and adventures alike.</div>
-        <button class="car-ask-btn" id="tiguanBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Ask About Tiguan
-        </button>
       </div>
     </div>
 
     <div class="car-card">
-      <div class="car-img-wrap">
-        <img src="id4.jpg" alt="2026 Volkswagen ID.4" loading="lazy" />
-      </div>
+      <div class="car-img-wrap"><img src="id4.jpg" alt="2026 Volkswagen ID.4" loading="lazy" /></div>
       <div class="car-info">
         <div class="car-year">2026</div>
         <div class="car-name">ID.4</div>
         <div class="car-desc">Fully electric, zero compromise. Impressive range, fast charging, and a tech-forward interior.</div>
-        <button class="car-ask-btn" id="id4Btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Ask About ID.4
-        </button>
       </div>
     </div>
 
@@ -618,54 +357,6 @@
   data-name="did-agent"
   data-monitor="true"
   data-target-id="did-agent-container">
-</script>
-
-<script>
-  function openAgent() {
-    const agent = document.querySelector('did-agent');
-    if (agent) {
-      if (typeof agent.open === 'function') { agent.open(); return; }
-      if (typeof agent.connect === 'function') { agent.connect(); return; }
-      const btn = agent.shadowRoot && agent.shadowRoot.querySelector('button');
-      if (btn) btn.click();
-    }
-  }
-
-  function askDept(topic) {
-    openAgent();
-    var attempts = 0;
-    var timer = setInterval(function() {
-      var agent = document.querySelector('did-agent');
-      if (agent && typeof agent.chat === 'function') {
-        agent.chat('Tell me about ' + topic + '.');
-        clearInterval(timer);
-      } else if (attempts++ > 10) {
-        clearInterval(timer);
-      }
-    }, 800);
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('startBtn').addEventListener('click', openAgent);
-    document.getElementById('financeBtn').addEventListener('click', function() {
-      askDept('financing options, monthly payments, and lease vs buy for a Volkswagen');
-    });
-    document.getElementById('salesBtn').addEventListener('click', function() {
-      askDept('available models, trim levels, and scheduling a test drive at Volkswagen North Orlando');
-    });
-    document.getElementById('serviceBtn').addEventListener('click', function() {
-      askDept('scheduling a service appointment, maintenance, and repair options at Volkswagen North Orlando');
-    });
-    document.getElementById('jettaBtn').addEventListener('click', function() {
-      askDept('the 2026 Volkswagen Jetta — pricing, trims, and availability at Volkswagen North Orlando');
-    });
-    document.getElementById('tiguanBtn').addEventListener('click', function() {
-      askDept('the 2026 Volkswagen Tiguan — pricing, trims, and availability at Volkswagen North Orlando');
-    });
-    document.getElementById('id4Btn').addEventListener('click', function() {
-      askDept('the 2026 Volkswagen ID.4 electric SUV — pricing, range, charging, and availability at Volkswagen North Orlando');
-    });
-  });
 </script>
 
 </body>
